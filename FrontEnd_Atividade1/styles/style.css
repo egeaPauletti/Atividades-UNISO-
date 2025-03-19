@@ -1,0 +1,146 @@
+:root {
+  --primary-color: #ffffff;
+  --secundary-color: #;
+}
+
+/* font-family: "Comfortaa", sans-serif; */
+/* font-family: "Playfair", serif; */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #3b3b3b;
+  color: var(--primary-color);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: calc(50% - 230px);
+  top: 10px;
+  gap: 30px;
+  margin: 3rem;
+
+  & .header__title {
+    color: var(--primary-color);
+    display: flex;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+
+    & img {
+      width: 84px;
+    }
+  }
+
+  & .navBar {
+    position: relative;
+    left: 5px;
+    display: flex;
+    gap: 20px;
+
+    & .navBar__listItem {
+      & a {
+        color: var(--primary-color);
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        outline: none;
+
+        &:hover {
+          &::after {
+            width: 80%;
+          }
+        }
+
+        &::after {
+          content: "";
+          position: relative;
+          bottom: -20%;
+          left: 10%;
+
+          width: 0;
+          height: 3px;
+          display: block;
+          background-color: #ffffff;
+          transition: 0.5s ease-out;
+        }
+      }
+    }
+  }
+}
+
+#initial {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  justify-content: start;
+  align-items: center;
+
+  background-image: url(../assets/aviciiInitialBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* transition: 1s ease-in-out; */
+  /* animation: slideFromRight 1s; */
+  & .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    margin: 0 0 0 100px;
+    width: 900px;
+    gap: 50px;
+
+    & h1 {
+      color: var(--primary-color);
+      display: flex;
+      font-family: "Comfortaa", sans-serif;
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow: 5px 5px 5px black;
+    }
+
+    & p {
+      font-size: 18px;
+      line-height: 2rem;
+    }
+
+    & button {
+      background-color: transparent;
+
+      border-color: var(--primary-color);
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 5px;
+      transform: skewX(-15deg);
+      transition: 0.5s ease;
+
+      color: inherit;
+      font-size: 1.1rem;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      padding: 5px 25px;
+
+      &:hover {
+        padding: 7px 30px;
+      }
+    }
+  }
+}
+
+/* Animations */
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
