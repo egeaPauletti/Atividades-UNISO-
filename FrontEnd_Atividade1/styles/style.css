@@ -17,7 +17,7 @@ header {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: calc(50% - 230px);
+  left: calc(50% - 200px);
   top: 10px;
   gap: 30px;
   margin: 3rem;
@@ -122,13 +122,109 @@ header {
       font-size: 1.1rem;
       font-weight: 500;
       cursor: pointer;
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
       padding: 5px 25px;
 
       &:hover {
         padding: 7px 30px;
       }
     }
+  }
+}
+
+#lastAlbum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+  gap: 50px;
+
+  & .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  & .content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Comfortaa", serif;
+    width: max-content;
+
+    &::after {
+      content: "";
+      position: relative;
+      top: 10px;
+      left: 10%;
+      border-radius: 20px;
+      height: 3px;
+      width: 80%;
+      background-color: var(--primary-color);
+      display: block;
+    }
+  }
+
+  & .albumImg {
+    width: 200px;
+  }
+
+  & .albumName {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #252525;
+    border-radius: 10px;
+    width: 950px;
+    padding: 10px 0 10px 10px;
+
+    & svg {
+      width: max-content;
+      padding: 0 10px 0 0;
+      border-color: #252525;
+      border-right: 2px;
+      border-style: solid;
+    }
+  }
+  & .statistics {
+    display: flex;
+    gap: 100px;
+    padding: 0 0 0 10px;
+    & figure {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-color: #101010;
+  gap: 100px;
+
+  & .about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  & .about__text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  & .about__text p {
+    font-size: 14px;
+    width: 920px;
+    line-height: 1.5rem;
+  }
+
+  & img {
+    width: 400px;
   }
 }
 
