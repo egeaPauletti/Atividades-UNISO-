@@ -238,11 +238,13 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #101010;
   gap: 100px;
-  margin: 5% 0;
+  height: 90vh;
+  background-color: #dee3ea;
 
   & h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     font-family: "Playfair", serif;
 
@@ -252,7 +254,7 @@ header {
       left: 10%;
       content: "";
       display: block;
-      background-color: #ffffff;
+      background-color: var(--secundary-color);
       width: 80%;
       height: 3px;
       border-radius: 10px;
@@ -269,11 +271,11 @@ header {
       align-items: center;
       width: 700px;
       gap: 50px;
-      color: var(--primary-color);
-      background-color: #333333;
+      color: var(--secundary-color);
+      background-color: #ffffff;
       padding: 20px 40px 70px 40px;
       border-radius: 20px;
-      box-shadow: 8px 8px 5px 0px rgba(18, 17, 17, 0.75);
+      box-shadow: 8px 8px 5px 0px rgba(216, 215, 215, 0.75);
 
       & h3 {
         font-weight: bold;
@@ -296,6 +298,7 @@ header {
 
             & span {
               font-weight: bold;
+              font-size: 1.2rem;
             }
           }
         }
@@ -305,6 +308,78 @@ header {
 
   & img {
     width: 100px;
+  }
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #101010;
+  gap: 100px;
+  background-color: #dee3ea;
+  padding: 100px 0;
+
+  & h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Playfair", serif;
+
+    &::after {
+      position: relative;
+      top: 10px;
+      left: 10%;
+      content: "";
+      display: block;
+      background-color: var(--secundary-color);
+      width: 80%;
+      height: 3px;
+      border-radius: 10px;
+    }
+  }
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & label {
+      display: block;
+      text-align: left;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    & input,
+    textarea {
+      width: 400px;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    & textarea {
+      height: 150px;
+    }
+
+    & button {
+      margin-top: 15px;
+      background-color: rgb(29, 29, 29);
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+
+      &:hover {
+        background-color: #333;
+      }
+    }
   }
 }
 
