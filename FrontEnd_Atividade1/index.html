@@ -24,10 +24,9 @@
         <h1>Avicii</h1>
       </div>
       <ul class="navBar">
-        <li class="navBar__listItem"><a href="">Sobre</a></li>
-        <li class="navBar__listItem"><a href="">Albuns</a></li>
-        <li class="navBar__listItem"><a href="">Musicas</a></li>
-        <li class="navBar__listItem"><a href="">Premios</a></li>
+        <li class="navBar__listItem"><a href="#about">Sobre</a></li>
+        <li class="navBar__listItem"><a href="#projects">Projetos</a></li>
+        <li class="navBar__listItem"><a href="#contact">Contato</a></li>
       </ul>
     </header>
 
@@ -45,17 +44,17 @@
             Apesar de sua trajetória curta, Avicii deixou um legado musical
             poderoso, repleto de emoção e inovação.
           </p>
-          <button>Ver Mais</button>
+          <button><a href="#about">Ver Mais</a></button>
         </div>
       </section>
 
       <section id="lastAlbum">
         <img class="albumImg" src="./assets/stories.png" alt="" />
-        <div class="content">
+        <div class="lastAlbum__content">
           <div>
-            <h2>Ultimo Album</h2>
+            <h2>Melhor Album</h2>
           </div>
-          <figure class="albumName">
+          <figure class="lastAlbum__albumName">
             <div class="containerImg">
               <svg
                 viewBox="-0.5 0 7 7"
@@ -103,7 +102,7 @@
             </div>
             <span>Stories</span>
           </figure>
-          <div class="statistics">
+          <div class="albumName__statistics">
             <figure>
               <svg
                 viewBox="0 -0.5 21 21"
@@ -256,7 +255,120 @@
         <img src="./assets/aviciiLogo.png" alt="" />
       </section>
 
-      <section id="albuns"></section>
+      <section id="projects">
+        <h2>Projetos</h2>
+        <div class="projects__cards">
+          <div class="projects__card">
+            <h3>Principais Albuns</h3>
+            <div class="projects__albuns">
+              <figure>
+                <div>
+                  <img src="./assets/trueAlbum.jpg" alt="" />
+                </div>
+                <div class="projects__TextAlbuns">
+                  <span>"True" (2013)</span>
+                  <p>
+                    Este álbum é um marco na carreira de Avicii, trazendo uma
+                    mistura de música eletrônica com elementos de folk e
+                    country. O single mais famoso deste álbum é "Wake Me Up",
+                    que se tornou um hit global e ajudou a definir o som de
+                    Avicii.
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <div>
+                  <img src="./assets/stories.png" alt="" />
+                </div>
+
+                <div class="projects__TextAlbuns">
+                  <span>"Stories" (2015)</span>
+                  <p>
+                    "Stories" seguiu o sucesso de "True" e continuou a explorar
+                    uma fusão entre música eletrônica e outros gêneros. Este
+                    álbum tem uma vibe mais melódica e madura. Destaques incluem
+                    "Waiting for Love" (um dos maiores hits do álbum), "For a
+                    Better Day" e "Broken Arrows".
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <div>
+                  <img src="./assets/timAlbum.png" alt="" />
+                </div>
+                <div class="projects__TextAlbuns">
+                  <span>"Tim" (2019)</span>
+                  <p>
+                    "Tim" foi lançado postumamente, após a morte de Avicii em
+                    2018. O álbum é uma homenagem ao legado do DJ e inclui
+                    músicas que ele estava trabalhando antes de falecer. Entre
+                    as faixas de destaque estão "SOS", "Heaven" e "Tough Love".
+                    Essas músicas foram finalizadas com a ajuda de colaboradores
+                    de Avicii, como Aloe Blacc e outros artistas.
+                  </p>
+                </div>
+              </figure>
+            </div>
+          </div>
+
+          <div class="projects__card">
+            <h3>Principais Musicas</h3>
+            <div class="projects__albuns">
+              <figure>
+                <div>
+                  <img src="./assets/Avicii_-_Wake_Me_Up!.jpg" alt="" />
+                </div>
+                <div class="projects__TextAlbuns">
+                  <span>Wake Me Up (2013)</span>
+                  <p>
+                    Uma das músicas mais icônicas de Avicii, Wake Me Up mistura
+                    EDM com folk de maneira inovadora. Com vocais de Aloe Blacc,
+                    a canção fala sobre autodescoberta e a busca por um
+                    propósito na vida. Sua melodia contagiante e letra emocional
+                    tornaram o hit um fenômeno global, conquistando milhões de
+                    ouvintes.
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <div>
+                  <img src="./assets/CAPA_LEVELS.jpg" alt="" />
+                </div>
+
+                <div class="projects__TextAlbuns">
+                  <span>Levels (2011)</span>
+                  <p>
+                    O sucesso que colocou Avicii no topo da música eletrônica,
+                    Levels é uma faixa instrumental poderosa, conhecida por seu
+                    drop inconfundível e o sample da música Something’s Got a
+                    Hold on Me, de Etta James. Com sua energia vibrante, a
+                    canção se tornou um hino da EDM e continua a ser uma
+                    referência no gênero.
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <div>
+                  <img src="./assets/Hey_Brother_Avicii.jpg" alt="" />
+                </div>
+                <div class="projects__TextAlbuns">
+                  <span>Hey Brother (2013)</span>
+                  <p>
+                    Em Hey Brother, Avicii combinou música eletrônica com
+                    elementos do country, criando uma sonoridade única. A letra
+                    transmite uma forte mensagem de apoio e fraternidade,
+                    acompanhada por um instrumental cativante. A música
+                    rapidamente se tornou um dos maiores sucessos do artista,
+                    emocionando fãs ao redor do mundo.
+                  </p>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato"></section>
     </main>
 
     <footer></footer>
